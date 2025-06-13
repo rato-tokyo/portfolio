@@ -1,0 +1,41 @@
+/* ウェルカムページ - モバイル用 (640px未満) */
+.welcome-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+}
+
+.welcome-content {
+  text-align: center;
+  padding: 1rem;
+  opacity: 0;
+  animation: welcome-fade-in 0.8s ease-out forwards;
+}
+
+.welcome-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+.welcome-subtitle {
+  font-size: 0.875rem;
+  color: #6b7280;
+  max-width: 64rem;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+@keyframes welcome-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

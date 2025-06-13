@@ -1,0 +1,91 @@
+/* ヒーローセクション - モバイル用 (640px未満) */
+/* 共通スタイルは削除し、コンポーネント固有のスタイルのみ残す */
+
+/* ヒーローコンテンツ - モバイル用 */
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  width: 100%;
+}
+
+
+/* キャッチフレーズ画像エリア */
+.hero-catchphrase {
+  width: 100%;
+  margin-bottom: 1rem;
+  text-align: center; /* 画像を中央揃え */
+}
+
+/* 画像ラッパー - 両方の画像に共通 */
+.image-wrapper {
+  display: inline-block; /* 画像の実際のサイズに合わせる */
+  max-width: 100%; /* コンテナからはみ出さないようにする */
+}
+
+/* 2つ目の画像ラッパー */
+.second-image-wrapper {
+  display: inline-block;
+  max-width: 100%;
+  margin-top: 20px; /* 最初から余白を確保 */
+  opacity: 0; /* 最初は透明 */
+  transition: opacity 1s ease-in-out; /* フェードイン効果 */
+}
+
+/* 2つ目の画像が表示される状態 */
+.second-image-wrapper.visible {
+  opacity: 1; /* 完全に表示 */
+}
+
+/* 画像 - 両方の画像に共通 */
+.hero-catchphrase-image {
+  display: block;
+  width: auto; /* 画像の本来の幅を維持 */
+  max-width: 100%; /* コンテナからはみ出さないようにする */
+  height: auto;
+}
+
+/* タイトル - モバイル用 */
+.hero-title {
+  font-size: 3.1vw;
+  font-weight: 700;
+  color: #1f2937;
+  line-height: 1.1;
+  white-space: nowrap;
+  width: 100%;
+  display: block;
+  overflow: visible;
+  text-overflow: unset;
+}
+
+/* ハイライト */
+.hero-title-highlight {
+  color: #2563eb;
+}
+
+/* サブタイトル - モバイル用 */
+.hero-subtitle {
+  font-size: 1.8vw;
+  color: #4b5563;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* 画像コンテナ - モバイル用 */
+.hero-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-width: 0;
+}
+
+/* 画像 - モバイル用 */
+.hero-image {
+  width: 40vw;
+  height: auto;
+  object-fit: cover;
+  border-radius: 1vw;
+  box-shadow: 0 0.4vw 0.6vw rgba(0, 0, 0, 0.1), 0 0.2vw 0.4vw rgba(0, 0, 0, 0.06);
+  display: block;
+}

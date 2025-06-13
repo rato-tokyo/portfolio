@@ -1,0 +1,20 @@
+/* メインページ - モバイル用 (640px未満) */
+.main-page {
+  opacity: 0;
+  animation: main-fade-in 0.8s ease-out forwards;
+}
+
+.main-content {
+  /* メインコンテンツのスタイル */
+}
+
+@keyframes main-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

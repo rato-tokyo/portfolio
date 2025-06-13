@@ -1,0 +1,13 @@
+/* ヒーローセクション - デスクトップ・タブレット用 (640px以上) */
+@media (min-width: 640px) {
+  .hero-grid {
+    grid-template-columns: 2fr 1fr;
+    gap:4vw;
+  }
+
+  .hero-image {
+    width: 50vw;
+  }
+  .hero-catchphrase-image {
+    width: 50vw;
+}

@@ -1,0 +1,37 @@
+/* 共通セクションスタイル - モバイル用 (640px未満) */
+.section {
+  padding: 2rem 0;
+  background-color: #ffffff;
+  width: 100%;
+}
+
+.section--gray {
+  background-color: #f9fafb;
+}
+
+.section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 6rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: #1f2937;
+  margin-bottom: 2rem;
+}
+
+/* 共通セクションスタイル - デスクトップ・タブレット用 (640px以上) */
+@media (min-width: 640px) {
+  .section {
+    padding: 4rem 0;
+  }
+
+  .section-title {
+    font-size: 2.25rem;
+  }
+}

@@ -1,0 +1,33 @@
+/* ヘッダー - デスクトップ・タブレット用 (640px以上) */
+@media (min-width: 640px) {
+  .header-container {
+    padding: 1rem 2rem;
+  }
+
+  .header-logo {
+    font-size: 1.5rem;
+  }
+
+  .header-menu-button {
+    display: none;
+  }
+
+  .header-nav {
+    position: static;
+    transform: none;
+    opacity: 1;
+    visibility: visible;
+    box-shadow: none;
+    padding: 0;
+    background: transparent;
+  }
+
+  .header-nav-list {
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+
+  .header-nav-link {
+    padding: 0;
+  }
+}

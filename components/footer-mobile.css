@@ -1,0 +1,63 @@
+/* フッターセクション - モバイル用 (640px未満) */
+/* 共通スタイルは削除し、コンポーネント固有のスタイルのみ残す */
+
+.footer {
+  border-top: 1px solid #e5e7eb;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.footer-info {
+  text-align: center;
+}
+
+.footer-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.footer-tagline {
+  color: #6b7280;
+  margin: 0;
+}
+
+.footer-social {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-social-link {
+  color: #6b7280;
+  transition: color 0.3s ease;
+}
+
+.footer-social-link:hover {
+  color: #1f2937;
+}
+
+.footer-social-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.footer-bottom {
+  border-top: 1px solid #e5e7eb;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  text-align: center;
+  width: 100%;
+}
+
+.footer-copyright {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin: 0;
+}

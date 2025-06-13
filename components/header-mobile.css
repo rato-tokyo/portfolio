@@ -1,0 +1,104 @@
+/* ヘッダー - モバイル用 (640px未満) */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #1f2937;
+}
+
+/* ハンバーガーメニューボタン - モバイル用 */
+.header-menu-button {
+  display: flex;
+  flex-direction: column;
+  width: 24px;
+  height: 18px;
+  justify-content: space-between;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.header-menu-line {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: #374151;
+  transition: all 0.3s ease;
+}
+
+.header-menu-line--active-1 {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.header-menu-line--active-2 {
+  opacity: 0;
+}
+
+.header-menu-line--active-3 {
+  transform: rotate(-45deg) translate(7px, -6px);
+}
+
+/* ナビゲーション - モバイル用 */
+.header-nav {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  transform: translateY(-100%);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.header-nav--open {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.header-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header-nav-item {
+  margin: 0;
+}
+
+.header-nav-link {
+  color: #6b7280;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  display: block;
+  padding: 0.5rem 0;
+}
+
+.header-nav-link:hover {
+  color: #1f2937;
+}

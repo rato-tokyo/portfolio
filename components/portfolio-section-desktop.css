@@ -1,0 +1,14 @@
+/* ポートフォリオセクション - デスクトップ・タブレット用 (640px以上) */
+@media (min-width: 640px) {
+  .section {
+    padding: 4rem 0;
+  }
+
+  .section-title {
+    font-size: 2.25rem;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

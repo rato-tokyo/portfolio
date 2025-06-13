@@ -1,0 +1,21 @@
+/* フッターセクション - デスクトップ・タブレット用 (640px以上) */
+@media (min-width: 640px) {
+  .section {
+    padding: 4rem 0;
+  }
+
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0;
+  }
+
+  .footer-info {
+    text-align: left;
+  }
+
+  .footer-title {
+    font-size: 1.5rem;
+  }
+}
